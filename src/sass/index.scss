@@ -1,2 +1,8 @@
-@import './common';
-@import './example';
+@import "./utils/normalize";
+@import "./utils/var";
+@import "./utils/base";
+@import "./header";
+@import "./gallery";
+@import "./customers";
+@import "./footer";
+
