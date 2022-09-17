@@ -1,0 +1,12 @@
+%button {
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    background-color: $button-green;
+    &:hover, &:focus {
+    background-color: $dark-green;
+    }
+    
+}
+
+// @extend %button 
