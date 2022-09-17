@@ -26,3 +26,21 @@
 //     @include fSize(500 , 24px, 1.6, 0.02em)
 // }
 
+.section__title {
+    @include fSize(700, 28px, 1.21, 0);
+    color: var($primary-text-color);
+
+    @media screen and (min-width:$tablet) {
+        @include fSize(700, 42px, 1.17, 0);
+    }
+}
+
+.section__description {
+    @include fSize(400, 14, 1.14, 0)
+    color: var($primary-text-color);
+
+    @media screen and (min-width:$tablet) {
+        @include fSize(400, 16px, 1.19, 0);
+    }
+}
+
