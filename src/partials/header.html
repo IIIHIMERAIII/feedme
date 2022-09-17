@@ -1,0 +1,46 @@
+<header class="header">
+  <div class="container container-header">
+    <a class="logo" href=".">
+      <svg сlass="logo__icon" width="66" height="52">
+        <use href="./images/header.svg#icon-logo"></use>
+      </svg>
+    </a>
+
+    <div id="burger" class="wrap">
+      <nav class="navigation">
+        <button class="close" type="button" onclick="myFunction()">
+          <svg class="close__icon" width="24" height="24">
+            <use href="./images/header.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link navigation__link-active"
+              >Home</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">About</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Service</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Menu</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="btn">Order Now</button>
+    </div>
+
+    <button class="burger" type="button" onclick="myFunction()">
+      <svg class="burger__icon" width="28" height="28">
+        <use href="./images/header.svg#icon-burger"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+<script src="./index.js"></script>

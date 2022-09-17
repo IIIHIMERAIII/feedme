@@ -1,0 +1,177 @@
+@import './utils/mixins';
+@import './utils/var';
+
+// === My defaults ===
+@mixin button() {
+    display: flex;
+    margin: 0 auto;
+    padding: 6px 18px;
+    background-color: $button-green;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+}
+
+@mixin hidden() {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+@mixin reset_hidden() {
+    white-space: none;
+    width: auto;
+    height: auto;
+    overflow: none;
+    border: none;
+    clip: auto;
+    clip-path: none;
+    margin: none;
+}
+
+
+// ======== Mobile first =========
+
+.header {
+    display: flex;
+    padding: 10px 0;
+    background: #FEFEFE;
+    box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+}
+
+.container-header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    @media screen and (max-width: $mobile) {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    .header .navigation {
+        position: relative;
+    }
+
+    .header .wrap {
+        @include hidden();
+    }
+
+    .header .wrap-mobile {
+        @include reset_hidden();
+
+        position: absolute;
+        width: 130px;
+        top: 40px;
+        right: 20px;
+        background: #FEFEFE;
+        box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+        padding: 0;
+        border-radius: 30px 0px 30px 30px;
+    }
+
+    .navigation__link {
+        display: block;
+        padding: 16px;
+        @include fSize(400, 16px, 1.19);
+
+        &:hover,
+        &:focus {
+            background-color: $button-green;
+        }
+    }
+
+    .header .close {
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        border: none;
+        background: none;
+
+        &:hover,
+        &:focus {
+            cursor: pointer;
+        }
+    }
+
+    .header .btn {
+        @include hidden();
+    }
+
+    .header .burger {
+        display: inline-block;
+        border: none;
+        background: none;
+        fill: currentColor;
+        color: $dark-green;
+
+        &:hover,
+        &:focus {
+            cursor: pointer;
+            color: $primary-yellow-color;
+        }
+    }
+}
+
+// ======= Tablet/Desktop =========
+
+
+@media screen and (min-width: $tablet) {
+
+
+    .close {
+        @include hidden();
+    }
+
+    .burger {
+        @include hidden();
+    }
+
+    .header .wrap {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+
+    .header .navigation__list {
+        display: flex;
+        gap: 28px;
+        margin-right: 30px;
+    }
+
+    .header .navigation__link {
+        align-items: center;
+        vertical-align: middle;
+        @include fSize(400, 14px, 1.14);
+
+        &:hover,
+        &:focus {
+            color: $button-green;
+        }
+    }
+
+    .header .navigation__link-active {
+        color: $button-green;
+        text-decoration: underline;
+    }
+
+    .header .btn {
+        @include button();
+        @include fSize(500, 13px, 1.5);
+
+        &:hover,
+        &focus {
+            cursor: pointer;
+            background-color: #B5FF00;
+        }
+    }
+}
