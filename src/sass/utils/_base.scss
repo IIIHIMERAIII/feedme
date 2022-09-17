@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import "./mixins";
+
 
 body {
     @include fSize(400, 14, 1.14);
@@ -26,16 +28,6 @@ body {
         width: 1280px;
     }
 }
-
-@mixin fSize($weight, $size, $height) {
-    font-weight: $weight;
-    font-size: $size;
-    line-height: $height;
-}
-
-// .test {
-//     @include fSize(500 , 24px, 1.6, 0.02em)
-// }
 
 .section__title {
     @include fSize(700, 28px, 1.21);

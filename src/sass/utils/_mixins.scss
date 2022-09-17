@@ -1,0 +1,9 @@
+@mixin fSize($weight, $size, $height) {
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+}
+
+// .test {
+//     @include fSize(500 , 24px, 1.6, 0.02em)
+// }
