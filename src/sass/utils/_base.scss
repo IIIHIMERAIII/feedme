@@ -3,10 +3,11 @@
 
 
 body {
-    @include fSize(400, 14, 1.14);
+    font-family: Roboto;
+    @include fSize(400, 14, 150%);
     color: $primary-text-color;
     @media screen and (min-width:$tablet) {
-    @include fSize(400, 16px, 1.19);
+    @include fSize(400, 16px, 150%);
 }}
 
 .container {
@@ -14,11 +15,12 @@ body {
     padding-left: 20px;
     margin-right: auto;
     margin-left: auto;
+    width: 100%;
     @media screen and (min-width:$mobile){
     width: 480px;
     }
     @media screen and (min-width:$tablet){
-        right: 32px;
+        padding-right: 32px;
         padding-left: 32px;
         width: 768px;
     }

@@ -7,3 +7,36 @@
 // .test {
 //     @include fSize(500 , 24px, 1.6, 0.02em)
 // }
+
+
+// header mixins
+
+@mixin button() {
+    display: flex;
+    margin: 0 auto;
+    padding: 6px 18px;
+    background-color: $button-green;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+}
+
+@mixin hidden() {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+@mixin reset_hidden() {
+    height: auto;
+    border: none;
+    clip: auto;
+    clip-path: none;
+}
