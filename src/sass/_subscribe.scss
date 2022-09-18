@@ -1,30 +1,80 @@
 .subscribe {
     z-index: 5;
+    padding-bottom: 60px;
+
+    @media screen and (min-width:$tablet) {
+        padding-bottom: 100px;
+    }
+
+    @media screen and (min-width:$desktop) {
+        padding-bottom: 64px;
+    }
 }
-.subscribe__pic {
-    margin-bottom: 17px;
+
+.subscribe__container {
+    @media screen and (min-width:$desktop) {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+.subscribe__wrap {
+    @media screen and (min-width:$desktop) {
+        max-width: 639px;    
+    }
+}
+
+.subscribe__pic img {
+    margin: 0 auto 17px auto;
+
+    @media screen and (min-width:$tablet) {
+        max-width: 281px;
+        margin: 0 0 20px auto;
+    }
+
+    @media screen and (min-width:$desktop) {
+        margin: 0;
+        max-width: 608px;
+    }
 }
 
 .subscribe__title {
-    margin-bottom: 20px;
-    max-width: 280px;
+    margin: 0 auto 20px auto;
+    // max-width: 280px;
+
+    @media screen and (min-width:$desktop) {
+        max-width: 639px;
+    }
 }
 
 .subscribe__description {
-    margin-bottom: 40px;
-    max-width: 280px;
+    margin: 0 auto 40px auto;
+    // max-width: 280px;
+
+    @media screen and (min-width:$desktop) {
+        max-width: 639px;
+    }
 }
 
 .subscribe-form {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
 
+    @media screen and (min-width:$tablet) {
+        flex-direction: row;
+        gap: 22px;
+    }
+
+    @media screen and (min-width:$desktop) {
+        flex-direction: row;
+        gap: 32px;
+    }
 
 }
 .subscribe-form__input {
     padding: 12px 11px;
     width: 100%;
-    max-width: 278px;
     background-color: white;
     border: 0.854167px solid $primary-yellow-color;
     border-radius: 30px;
@@ -33,11 +83,20 @@
         @include fSize(400, 12px, 1.5);
         color: $input-text-color;
     }
+
+    @media screen and (min-width:$tablet) {
+        max-width: 394px;
+    }
+    
+    @media screen and (min-width:$desktop) {
+        // max-width: 278px;
+    }
 }
 
 .subscribe-form__btn {
     display: block;
     padding: 11px 22px;
+    margin-left: auto;
     max-width: 103px;
     border-radius: 30px;
     border: none;
@@ -48,5 +107,8 @@
     &:hover,
     &:focus {
         background-color: $button-green-hover;
+    }
+    @media screen and (min-width:$tablet) {
+        margin-left: 0;
     }
 }
