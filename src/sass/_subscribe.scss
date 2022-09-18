@@ -23,7 +23,6 @@
 }
 .subscribe-form__input {
     padding: 12px 11px;
-    margin-bottom: 20px;
     width: 100%;
     max-width: 278px;
     background-color: white;
@@ -42,6 +41,7 @@
     max-width: 103px;
     border-radius: 30px;
     border: none;
+    background-color:$button-green;
     @include fSize(500, 13px, 1.54);
     color: $primary-text-color;
 
