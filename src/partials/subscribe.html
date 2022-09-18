@@ -1,12 +1,18 @@
 <section class="section subscribe">
     <div class="container subscribe__container">
-        <h2 class="section__title subscribe__title"></h2>
+        <picture class="subscribe__pic">
+            <source srcset="./images/mobile/banana_mobile@1x.png 1x, ./images/mobile/banana_mobile@2x.png 2x" media="(max-width: 767px)">
+            <source srcset="./images/tablet/banana_tablet@1x.png 1x, ./images/tablet/banana_tablet@2x.png 2x" media="(max-width: 1199px)">
+            <source srcset="./images/desktop/banana_desktop@1x.png 1x, ./images/desktop/banana_desktop@2x.png 2x" media="(min-width: 1200px)">
+            <img src="./images/mobile/banana_mobile@1x.png" alt="banana">
+        </picture>
+        <h2 class="section__title subscribe__title">Subscribe To Get Special Offers</h2>
         <p class="section__description subscribe__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Suspendisse varius enim
             in eros elementum tristique.</p>
         <form class="subscribe-form" action="subscribe">
-            <input class="subsccribe-form__input" type="email" name="email" placeholder="Enter your email">
-            <button class="subsccribe-form__btn" type="submit">Subscribe</button>
+            <input class="subscribe-form__input" type="email" name="email" placeholder="Enter your email">
+            <button class="subscribe-form__btn" type="submit">Subscribe</button>
         </form>
     </div>
 </section>
