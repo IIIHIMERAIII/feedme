@@ -1,0 +1,1 @@
+{"mappings":"AAEA,SAASA,aACPC,SAASC,eAAe,UAAUC,UAAUC,OAAO","sources":["src/index.js"],"sourcesContent":["// --- Burger Close/Open ---\n\nfunction myFunction() {\n  document.getElementById('burger').classList.toggle('wrap-mobile');\n}\n\n// --- /// ---"],"names":["myFunction","document","getElementById","classList","toggle"],"version":3,"file":"index.febc9a46.js.map"}
