@@ -36,15 +36,13 @@
 }
 
 .subscribe-form__btn {
-    display: block;
+    display: flex;
     padding: 11px 22px;
     max-width: 103px;
     border-radius: 30px;
     border: none;
     background-color:$button-green;
     @include fSize(500, 13px, 1.54);
-    color: $primary-text-color;
-
     &:hover,
     &:focus {
         background-color: $button-green-hover;

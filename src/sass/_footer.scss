@@ -1,0 +1,148 @@
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 24px rgba(105, 105, 105, .1);
+    @media screen and (min-width:$desktop) {
+    display: flex;
+    justify-content: baseline;}
+}
+
+.footer--inner {
+    margin-top: 64px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+        @media screen and (min-width:$desktop) {
+        display: flex;
+        justify-content: baseline;}
+}
+
+.footer--menu {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @media screen and (min-width:$tablet) {
+        align-items: center;
+    }
+}
+
+.menu--logo {
+    width: 69px;
+    height: 51px;
+
+    @media screen and (min-width:$tablet) {
+        margin-left: 13px;
+        margin-right: 114px;
+        flex-shrink: 0;
+
+        @media screen and (min-width:$desktop) {
+            margin-left: 0;
+            margin-right: 148px;
+        }
+    }
+}
+
+.menu--list {
+    display: flex;
+    flex-direction: column;
+    margin-right: 81px;
+
+    @media screen and (min-width:$tablet) {
+        flex-direction: row;
+        margin-right: 250px;
+    }
+
+    @media screen and (min-width:$desktop) {
+        margin-right: 320px;
+    }
+}
+
+.menu--item {
+    &:not(:first-child) {
+        margin-top: 20px;
+    }
+
+    @media screen and (min-width:$tablet) {
+        &:not(:first-child) {
+            margin-top: 0px;
+            margin-left: 28px;
+        }
+    }
+}
+
+.footer--subscribe {
+    margin-top: 12px;
+
+    @media screen and (min-width:$desktop) {
+        margin-top: 0;
+    }
+}
+
+.subscribe-form {
+    margin-top: 12px;
+}
+
+.subscribe--title-- {
+    text-align: start;
+    font-weight: 500;
+}
+
+.footer--policy {
+    margin-top: 20px;
+    text-align: start;
+}
+
+.footer--link {
+    font-size: 10px;
+    line-height: 120%;
+    color: $dark-green;
+    text-decoration: underline;
+}
+
+.footer--info {
+    margin-top: 62px;
+
+    @media screen and (min-width:$tablet) {
+        margin-top: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    @media screen and (min-width:$desktop) {
+        margin-top: 80px;
+    }
+}
+
+.info--list {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+}
+
+.info--item {
+    &:not(:first-child) {
+        margin-left: 32px;
+
+        @media screen and (min-width:$tablet) {
+            &:not(:first-child) {
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+.footer--rights {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 10px;
+    line-height: 120%;
+
+    @media screen and (min-width:$tablet) {
+        margin-top: 0px;
+        margin-right: 12px;
+    }
+}
