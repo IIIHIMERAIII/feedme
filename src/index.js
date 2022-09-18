@@ -8,4 +8,8 @@ function closeBurger() {
   document.getElementById('burger').classList.toggle('wrap-mobile');
 }
 
+// --- Modal ---
+function toggleModal() {
+  document.getElementById('modal').classList.toggle('is-hidden');
+}
 // --- /// ---
