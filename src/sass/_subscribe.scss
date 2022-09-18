@@ -1,0 +1,52 @@
+.subscribe {
+    z-index: 5;
+}
+.subscribe__pic {
+    margin-bottom: 17px;
+}
+
+.subscribe__title {
+    margin-bottom: 20px;
+    max-width: 280px;
+}
+
+.subscribe__description {
+    margin-bottom: 40px;
+    max-width: 280px;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+.subscribe-form__input {
+    padding: 12px 11px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 278px;
+    background-color: white;
+    border: 0.854167px solid $primary-yellow-color;
+    border-radius: 30px;
+
+    &::placeholder {
+        @include fSize(400, 12px, 1.5);
+        color: $input-text-color;
+    }
+}
+
+.subscribe-form__btn {
+    display: block;
+    padding: 11px 22px;
+    max-width: 103px;
+    border-radius: 30px;
+    border: none;
+    @include fSize(500, 13px, 1.54);
+    color: $primary-text-color;
+
+    &:hover,
+    &:focus {
+        background-color: $button-green-hover;
+    }
+}
