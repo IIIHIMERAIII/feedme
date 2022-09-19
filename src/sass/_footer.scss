@@ -9,8 +9,6 @@
 }
 
 .footer-inner {
-    margin-top: 64px;
-    margin-bottom: 60px;
     display: flex;
     flex-direction: column;
         @media screen and (min-width:$desktop) {
@@ -25,10 +23,11 @@
 
 .footer-menu {
     margin-bottom: 40px;
+    max-width: 650px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-
+    margin-right: auto;
     @media screen and (min-width:$tablet) {
         align-items: center;
     }
