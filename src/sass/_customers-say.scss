@@ -1,27 +1,47 @@
 .customers{
-    // max-width: 100%;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
+    background-position: bottom;
     background-image:url(../images/mobile/customerbgmob320.png);
 
-    // @media screen and (max-width: $mobile) {
-    //     background-image:url(../images/mobile/customerbgmob320.png);
-       
-    // }
-
+    @media screen and (max-width: $mobile) {
+        background-image:url(../images/mobile/customerbgmob320.png);
+        background-size: cover;
+    }
     @media screen and (min-width: 480px) and (max-width: 767px) {
         background-image:url(../images/mobile/customerbgmob.png);
     }
+
+    @media screen and (min-width: $tablet){
+        background-image:url(../images/tablet/customersbgtab.png);
+    }
+
+    @media screen and (min-width: $desktop){
+        background-image:url(../images/desktop/customersbgdesk.png);
+    }
    
 }
+
+
+.customers__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 .customers__dscr{
     padding-top: 60px;
     max-width: 280px;
     padding-bottom: 32px;
+
+    @media screen and (min-width: $tablet){
+        max-width: 501px;
+        margin-right: auto;
+    }
+
+    @media screen and (min-width: $desktop){
+        padding-top: 100px;
+    }
 }
 
 .customers__title{
@@ -33,33 +53,56 @@
     flex-direction: column;
     gap: 24px;
     padding-bottom: 60px;
+
+
+    @media screen and (min-width: $tablet){
+        flex-direction: initial;
+        gap: 32px;
+        padding-bottom: 120px;
+       
+    }
+
+    @media screen and (min-width: $desktop){
+        gap: 139px;
+        padding-bottom: 200px;
+        margin-right: auto;
+       
+    }
    
 }
 
 .review__box{
-    gap: 24px;
     max-width: 280px;
     background: #FFFFFF;
     border-radius: 0px 27px 27px 27px;
     padding: 8px;
+
+    @media screen and (min-width: $tablet){
+       padding: 12px;
+       max-width: 336px;
+    }
+
+    @media screen and (min-width: $desktop){
+        padding: 14px;
+        max-width: 501px;
+     }
 }
 
-// .customers__icons{
-    
-// }
 
 .review__paragraph{
     margin-top: 28px;
     margin-bottom: 40px;
+    @include fSize(700, 16px, 1.18);
+
+    @media screen and (min-width: $tablet){
+        @include fSize(700, 18px, 1.16);
+    }
 }
+
 
 .customers__image{
     border: 2px solid #FFE550;
     border-radius: 29px;
-}
-
-.review_paragraph{
-    @include fSize(700, 16px, 1.18);
 }
 
 .review__card{
