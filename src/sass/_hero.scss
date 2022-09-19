@@ -1,1 +1,64 @@
+.hero {
+    padding-top: 60px;
+    padding-bottom: 60px
+}
+
+.hero__title {
+    @include fSize (700, 28, 1.18);
+    
+    margin-bottom: 28px;
+
+    @media screen and (min-width:$tablet) {
+        @include fSize (700, 42, 1.19);
+        margin-bottom: 44px;   
+    }
+}
+
+.hero__text {
+    @include fSize (400, 14, 1.5);
+
+    margin-bottom: 34px;
+
+    @media screen and (min-width:$tablet) {
+        @include fSize (400, 16, 1.5);
+        margin-bottom: 40px;    
+    }
+}
+
+.hero__button {
+    padding: 6px 18px;
+    text-align: center;
+    background-color: $button-green;
+    border-radius: 30px;
+    border: none;
+
+    @include fSize (500, 13, 1.5);
+
+    &:hover,
+    &:focus {
+        background-color: $button-green-hover;
+    }
+}
+
+.hero__photo {
+    display: none;
+    @media screen and (min-width: $tablet) {
+        display: inline-block;       
+    }
+}
+
+.hero__content {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+    }
+}
+
+.hero__content-inner {
+    margin-right: 32px;
+}
+
+
+
+
+
 
