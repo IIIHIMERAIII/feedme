@@ -5,22 +5,22 @@
 
 .hero__title {
     @include fSize (700, 28, 1.18);
-    
-    margin-bottom: 28px;
 
     @media screen and (min-width:$tablet) {
-        @include fSize (700, 42, 1.19);
-        margin-bottom: 44px;   
+        @include fSize (700, 42, 1.19); 
+        margin-right: 167px;
     }
 }
 
 .hero__text {
     @include fSize (400, 14, 1.5);
-
+    margin-top: 28px;
+    margin-right: 32px;
     margin-bottom: 34px;
 
     @media screen and (min-width:$tablet) {
         @include fSize (400, 16, 1.5);
+        margin-top: 44px;
         margin-bottom: 40px;    
     }
 }
@@ -54,7 +54,21 @@
 }
 
 .hero__content-inner {
-    margin-right: 32px;
+    @media screen and (min-width:$tablet) {
+        margin-right: 32px;
+    }
+}
+
+.hero__photo {
+    outline: 14px solid $primary-yellow-color;
+    border-radius: 50%;
+    margin-bottom: 14px;
+    margin-right: 22px;
+
+    &:hover,
+    &:focus {
+        outline: 14px solid $button-green;
+    }
 }
 
 
