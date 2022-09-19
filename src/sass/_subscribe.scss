@@ -102,6 +102,7 @@
     border-radius: 30px;
     border: none;
     background-color:$button-green;
+    cursor: pointer;
     @include fSize(500, 13px, 1.54);
     &:hover,
     &:focus {

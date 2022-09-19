@@ -18,6 +18,11 @@
         justify-content: baseline;}
 }
 
+.footer-desktop {
+    @media screen and (min-width:$desktop) {
+        display: flex;
+}}
+
 .footer-menu {
     margin-bottom: 40px;
     display: flex;
@@ -73,18 +78,19 @@
     }
 }
 
-.footer-subscribe {
-    margin-top: 12px;
-
-    @media screen and (min-width:$desktop) {
-        margin-top: 0;
-    }
-}
-
 .subscribe-title {
     text-align: start;
     font-weight: 500;
     margin-bottom: 12px;
+}
+
+.footer-btn {
+    background-color: transparent;
+    border: 0.854167px solid $dark-green;
+    cursor: pointer;
+    &:hover, &:focus {
+        background-color: $primary-yellow-color;
+    }
 }
 
 .footer-policy {
@@ -137,9 +143,10 @@
     margin-top: 40px;
     font-size: 10px;
     line-height: 120%;
-
     @media screen and (min-width:$tablet) {
         margin-top: 0px;
         margin-right: 12px;
     }
-}
+     @media screen and (min-width:$desktop) {
+    margin-right: 0;
+}}
