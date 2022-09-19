@@ -1,6 +1,10 @@
 @import './utils/var';
 @import './utils/mixins';
 
+body {
+    position: relative;
+}
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -12,6 +16,7 @@
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
     visibility: visible;
+    overflow-y: scroll;
     transition: opacity 250ms ease,
         visibility 250ms ease;
 }
@@ -40,6 +45,11 @@
     border-radius: 30px;
     opacity: 1;
     transition: transform 350ms ease;
+
+    @media screen and (orientation: landscape) and (max-height: 458px) {
+        top: 0;
+        transform: translate(-50%);
+    }
 }
 
 
@@ -141,10 +151,15 @@
     width: 100%;
     opacity: 0;
     display: flex;
+    margin-top: 1px;
     margin-bottom: 9px;
     margin-left: 25px;
     @include fSize(500, 11px, 1.4);
     color: #FF705D;
+}
+
+.form .error__icon {
+    margin-right: 4px;
 }
 
 .modal .form__send {
@@ -153,4 +168,10 @@
     border: 2px solid $dark-green;
     border-radius: 30px;
     margin-top: 8px;
+}
+
+.scroll_off {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
 }
