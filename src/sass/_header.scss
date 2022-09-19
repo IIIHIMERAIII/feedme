@@ -31,7 +31,7 @@
         box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
         padding: 0;
         border-radius: 30px 0px 30px 30px;
-
+        overflow: hidden;
         pointer-events: none;
         opacity: 0;
         transform: translateY(-50%) scaleY(.1);

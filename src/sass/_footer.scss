@@ -8,7 +8,7 @@
     justify-content: baseline;}
 }
 
-.footer--inner {
+.footer-inner {
     margin-top: 64px;
     margin-bottom: 60px;
     display: flex;
@@ -18,7 +18,7 @@
         justify-content: baseline;}
 }
 
-.footer--menu {
+.footer-menu {
     margin-bottom: 40px;
     display: flex;
     align-items: flex-start;
@@ -29,7 +29,7 @@
     }
 }
 
-.menu--logo {
+.menu-logo {
     width: 69px;
     height: 51px;
 
@@ -45,7 +45,7 @@
     }
 }
 
-.menu--list {
+.menu-list {
     display: flex;
     flex-direction: column;
     margin-right: 81px;
@@ -60,7 +60,7 @@
     }
 }
 
-.menu--item {
+.menu-item {
     &:not(:first-child) {
         margin-top: 20px;
     }
@@ -73,7 +73,7 @@
     }
 }
 
-.footer--subscribe {
+.footer-subscribe {
     margin-top: 12px;
 
     @media screen and (min-width:$desktop) {
@@ -81,28 +81,25 @@
     }
 }
 
-.subscribe-form {
-    margin-top: 12px;
-}
-
-.subscribe--title-- {
+.subscribe-title {
     text-align: start;
     font-weight: 500;
+    margin-bottom: 12px;
 }
 
-.footer--policy {
+.footer-policy {
     margin-top: 20px;
     text-align: start;
 }
 
-.footer--link {
+.footer-link {
     font-size: 10px;
     line-height: 120%;
     color: $dark-green;
     text-decoration: underline;
 }
 
-.footer--info {
+.footer-info {
     margin-top: 62px;
 
     @media screen and (min-width:$tablet) {
@@ -117,13 +114,13 @@
     }
 }
 
-.info--list {
+.info-list {
     display: flex;
     justify-content: space-between;
     font-size: 10px;
 }
 
-.info--item {
+.info-item {
     &:not(:first-child) {
         margin-left: 32px;
 
@@ -135,7 +132,7 @@
     }
 }
 
-.footer--rights {
+.footer-rights {
     text-align: center;
     margin-top: 40px;
     font-size: 10px;

@@ -78,11 +78,12 @@
     background-color: white;
     border: 0.854167px solid $primary-yellow-color;
     border-radius: 30px;
+    @include fSize(400, 12px, 1.5);
 
-    &::placeholder {
-        @include fSize(400, 12px, 1.5);
-        color: $input-text-color;
-    }
+    // &::placeholder {
+    //     @include fSize(400, 12px, 1.5);
+    //     color: $input-text-color;
+    // }
 
     @media screen and (min-width:$tablet) {
         max-width: 394px;
