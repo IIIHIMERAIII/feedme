@@ -23,7 +23,12 @@
         minlength="3"
         maxlength="25"
       />
-      <span class="error">The name must be between 3 and 25 characters</span>
+      <span class="error">
+        <svg class="error__icon" width="12" height="12">
+          <use href="./images/icons.svg#icon_error"></use>
+        </svg>
+        The name must be between 3 and 25 characters
+      </span>
 
       <label for="Phone" class="form__label">
         <span class="form__info">Phone number</span>
@@ -37,9 +42,12 @@
         required
         pattern="[\+][0-9]{12}"
       />
-      <span class="error"
-        >This phone must be in the format +38 099 000 00 00</span
-      >
+      <span class="error">
+        <svg class="error__icon" width="12" height="12">
+          <use href="./images/icons.svg#icon_error"></use>
+        </svg>
+        This phone must be in the format +38 099 000 00 00
+      </span>
 
       <label for="Email" class="form__label">
         <span class="form__info">E-mail</span>
@@ -53,7 +61,12 @@
         required
         minlength="8"
       />
-      <span class="error">Please enter a valid email address</span>
+      <span class="error">
+        <svg class="error__icon" width="12" height="12">
+          <use href="./images/icons.svg#icon_error"></use>
+        </svg>
+        Please enter a valid email address
+      </span>
 
       <button class="form__send" type="submit">Send</button>
     </form>
