@@ -19,28 +19,57 @@
         </button>
       </div>
 
-      <div class="hero__picture">
-        <picture>
-          <source
-            srcset="
-              ./images/tablet/hero1_tablet@1x.png 1x,
-              ./images/tablet/hero1_tablet@2x.png 2x
-            "
-            media="(min-width: 768px) and (max-width: 1279px)"
-          />
-          <source
-            srcset="
-              ./images/desktop/hero1_desktop@1x.png 1x,
-              ./images/desktop/hero1_desktop@2x.png 2x
-            "
-            media="(min-width: 1280px)"
-          />
-          <img
-            class="hero__photo"
-            src="./images/tablet/hero1_tablet@1x.png"
-            alt="Фалафель"
-          />
-        </picture>
+      <div class="hero__picture swiper mySwiper">
+        <div class="swiper-wrapper">
+          <picture class="swiper-slide">
+            <source
+              srcset="
+                ./images/tablet/hero1_tablet@1x.png 1x,
+                ./images/tablet/hero1_tablet@2x.png 2x
+              "
+              media="(min-width: 768px) and (max-width: 1279px)"
+            />
+            <source
+              srcset="
+                ./images/desktop/hero1_desktop@1x.png 1x,
+                ./images/desktop/hero1_desktop@2x.png 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <img
+              class="hero__photo"
+              src="./images/tablet/hero1_tablet@1x.png"
+              alt="Фалафель"
+            />
+          </picture>
+          <picture class="swiper-slide">
+            <source
+              srcset="
+                ./images/tablet/hero1_tablet@1x.png 1x,
+                ./images/tablet/hero1_tablet@2x.png 2x
+              "
+              media="(min-width: 768px) and (max-width: 1279px)"
+            />
+            <source
+              srcset="
+                ./images/desktop/hero1_desktop@1x.png 1x,
+                ./images/desktop/hero1_desktop@2x.png 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <img
+              class="hero__photo"
+              src="./images/tablet/hero1_tablet@1x.png"
+              alt="Фалафель"
+            />
+          </picture>
+        </div>
+        <svg class="arrow_left" width="48" height="40">
+          <use href="./images/arrow.svg#arrow_left"></use>
+        </svg>
+        <svg class="arrow_right" width="48" height="40">
+          <use href="./images/arrow.svg#arrow_right"></use>
+        </svg>
       </div>
     </div>
   </div>
