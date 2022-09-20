@@ -55,24 +55,24 @@
     display: none;
     @media screen and (min-width: $tablet) {
         display: flex;
-        outline: 14px solid $primary-yellow-color;
+        border: 14px solid $primary-yellow-color;
         border-radius: 50%;
         // margin-bottom: 14px;
         // margin-right: 22px;
         
         &:hover,
         &:focus {
-            outline: 14px solid $button-green;
+            border: 14px solid $button-green;
         }
               
     }
 
     @media screen and (min-width:$desktop) {
-        outline: 26px solid $primary-yellow-color;
+        border: 26px solid $primary-yellow-color;
 
         &:hover,
         &:focus {
-            outline: 26px solid $button-green;
+            border: 26px solid $button-green;
         }
     }
 }
@@ -98,8 +98,8 @@
 
     @media screen and (min-width:$desktop) {
         min-width: 528px;
-        margin-top: 40px;
-        margin-right: 40px;
+        margin-top: 14px;
+        margin-right: 14px;
     }
 
 }
