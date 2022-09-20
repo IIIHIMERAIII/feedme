@@ -17,6 +17,7 @@ body {
     opacity: 1;
     visibility: visible;
     overflow-y: scroll;
+    z-index: 4;
     transition: opacity 250ms ease,
         visibility 250ms ease;
 }
@@ -108,25 +109,24 @@ body {
 .modal .form__input {
     width: 100%;
     padding: 14px 12px;
-    border: 1px solid rgba(18, 18, 18, 0.12);
+    border: 1px solid $primary-yellow-color;
     box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
     border-radius: 30px;
     transition: border 250ms ease;
     @include fSize(400, 16px, 1.25);
+
+    &:focus-visible {
+        outline: 1px solid $dark-green;
+    }
 
     &::placeholder {
         @include fSize(400, 16px, 1.25);
         color: #C4C4C4;
     }
 
-    &:hover,
-    &:focus {
-        border: 1px solid grey;
-        outline: none;
-    }
-
     &:valid:not(:placeholder-shown) {
-        border: 1px solid #7EB101;
+        border: 1px solid $dark-green;
+        outline: none;
 
         &~.form__send {
             background-color: $button-green;
@@ -135,6 +135,7 @@ body {
 
     &:invalid:not(:placeholder-shown) {
         border: 1px solid #FF705D;
+        outline: none;
 
         &~.form__send {
             background: #ffffff;
