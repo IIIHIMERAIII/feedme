@@ -46,6 +46,7 @@
     &:hover,
     &:focus {
         background-color: $button-green-hover;
+        cursor: pointer;
     }
 }
 
