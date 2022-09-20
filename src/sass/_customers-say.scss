@@ -26,27 +26,23 @@
 .customers__container{
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-
-.customers__dscr{
     padding-top: 60px;
-    max-width: 280px;
-    padding-bottom: 32px;
 
-    @media screen and (min-width: $tablet){
-        max-width: 501px;
-        margin-right: auto;
+    @media screen and (max-width: $tablet){
+        align-items: center;
     }
 
-    @media screen and (min-width: $desktop){
+    @media screen and (min-width: $tablet){
         padding-top: 100px;
     }
 }
 
 .customers__title{
     margin-bottom: 20px;
+}
+
+.customers__paragraph{
+    margin-bottom: 32px;
 }
 
 .customers__say{
