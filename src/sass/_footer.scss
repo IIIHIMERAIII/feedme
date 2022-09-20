@@ -146,12 +146,12 @@ footer::after {
 }
 
 .nav-footer__link {
-    transition: 200ms $cubic-bezier}
+    transition: 200ms $cubic-bezier;
     &:hover,
     &:focus {
     color: $button-green;
     text-decoration: underline;
-}
+}}
 
 
 .subscribe-title {
