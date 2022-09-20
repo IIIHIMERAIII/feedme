@@ -15,12 +15,27 @@
     @media screen and (min-width:$desktop) {
         display: flex;
         flex-direction: row-reverse;
+        align-items: center;
+        margin-top: -70px;
     }
 }
 
 .subscribe__wrap {
     @media screen and (min-width:$desktop) {
         max-width: 639px;    
+    }
+}
+
+.subscribe__pic {
+    display: block;
+    margin-top: -60px;
+
+    @media screen and (min-width:$tablet) {
+        margin-top: -70px;
+    }
+
+    @media screen and (min-width:$desktop) {
+        margin: 0;
     }
 }
 
@@ -39,8 +54,7 @@
 }
 
 .subscribe__title {
-    margin: 0 auto 20px auto;
-    // max-width: 280px;
+    margin-bottom: 20px;
 
     @media screen and (min-width:$desktop) {
         max-width: 639px;
@@ -48,7 +62,7 @@
 }
 
 .subscribe__description {
-    margin: 0 auto 40px auto;
+    margin-bottom: 40px;
     // max-width: 280px;
 
     @media screen and (min-width:$desktop) {
