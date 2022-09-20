@@ -36,6 +36,7 @@ footer::after {
     bottom: 0;
     width: 1211px;
     height: 266px;}
+    pointer-events: none;
 }
 
 .footer::before {
@@ -144,6 +145,14 @@ footer::after {
     }
 }
 
+.nav-footer__link {
+    &:hover,
+    &:focus {
+    color: $button-green;
+    text-decoration: underline;
+    }
+}
+
 .subscribe-title {
     text-align: start;
     font-weight: 500;
@@ -174,10 +183,12 @@ footer::after {
 }
 
 .footer-policy {
-    margin-top: 20px;
+    margin-top: 31px;
     text-align: start;
     font-size: 10px;
     line-height: 120%;
+    @media screen and (min-width:$tablet) {
+    margin-top: 12px;}
 }
 
 .footer-link {
@@ -185,6 +196,7 @@ footer::after {
     line-height: 120%;
     color: $dark-green;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .footer-info {
