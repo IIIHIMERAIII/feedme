@@ -52,15 +52,6 @@
 
 .favorites__item {
   display: flex;
-  max-width: 280px;
-
-  @media screen and(min-width: $tablet) {
-    max-width: 336px;
-  }
-
-  @media screen and(min-width: $desktop) {
-    max-width: 394px;
-  }
 
   &:nth-child(n + 4) {
     display: none;
@@ -74,10 +65,20 @@
 }
 
 .favorites__link {
-  padding-top: 29px;
-  padding-bottom: 29px;
-  padding-left: 29px;
-  padding-right: 29px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 17px;
+  padding-right: 17px;
+
+  width: 280px;
+
+  @media screen and(min-width: $tablet) {
+    width: 336px;
+  }
+
+  @media screen and(min-width: $desktop) {
+    width: 394px;
+  }
 
   background: #f5f5f5;
   border: 11px solid #ffe550;
@@ -89,18 +90,18 @@
   }
 
   @media screen and(min-width: $tablet) {
-    padding-top: 34px;
-    padding-bottom: 34px;
-    padding-left: 34px;
-    padding-right: 34px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     border: 14px solid #ffe550;
   }
 
   @media screen and(min-width: $desktop) {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
     border: 16px solid #ffe550;
   }
 }
