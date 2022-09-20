@@ -89,8 +89,8 @@
     align-items: center;
     justify-content: center;
     padding: 20px;
-    // max-width: 608px;
-    // max-height: 580px;
+    // width: 608px;
+    // height: 580px;
 
     @media screen and (min-width:$tablet) {
         display: flex;
@@ -98,7 +98,8 @@
     }
 
     @media screen and (min-width:$desktop) {
-        min-width: 528px;
+        display: flex;
+        min-width: 580px;
         margin-top: 14px;
         margin-right: 14px;
     }
