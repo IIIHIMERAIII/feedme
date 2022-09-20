@@ -1,2 +1,0 @@
-function openBurger(){document.querySelector(".wrap").classList.add("wrap-mobile")}function closeBurger(){document.getElementById("burger").classList.toggle("wrap-mobile")}var body=document.body;function disabledScrol(){body.classList.toggle("scroll_off")}function toggleModal(){document.getElementById("modal").classList.toggle("is-hidden"),disabledScrol()}
-//# sourceMappingURL=index.9db6118a.js.map
