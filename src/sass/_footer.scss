@@ -146,12 +146,13 @@ footer::after {
 }
 
 .nav-footer__link {
+    transition: 200ms $cubic-bezier}
     &:hover,
     &:focus {
     color: $button-green;
     text-decoration: underline;
-    }
 }
+
 
 .subscribe-title {
     text-align: start;
@@ -173,15 +174,15 @@ footer::after {
 
 .footer-btn {
     background-color: transparent;
-    border: 0.854167px solid $dark-green;
+    border: 1px solid $dark-green;
+    transition: 200ms $cubic-bezier;
     cursor: pointer;
     &:hover, &:focus {
     background-color: $primary-yellow-color;
     }
     @media screen and (min-width:$tablet) {
-    margin-left: 13px;}
-
-}
+    margin-left: 13px;
+}}
 
 .footer-policy {
     margin-top: 31px;
@@ -198,6 +199,7 @@ footer::after {
     color: $dark-green;
     text-decoration: underline;
     cursor: pointer;
+    transition: 200ms $cubic-bezier;
 }
 
 .footer-info {
