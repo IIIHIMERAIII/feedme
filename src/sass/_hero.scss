@@ -52,6 +52,10 @@
 
 .hero__photo {
     // max-width: 100%;
+    &:hover {
+        cursor: pointer;    
+    }
+
     display: none;
     @media screen and (min-width: $tablet) {
         display: flex;
