@@ -158,8 +158,9 @@ footer::after {
 
 .footer-subscribe {
     gap: 0;
-
-}
+    @media screen and (min-width:$tablet) {
+    align-items: flex-starts;
+}}
 
 .footer-btn {
     background-color: transparent;
