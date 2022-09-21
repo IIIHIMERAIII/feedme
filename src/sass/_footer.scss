@@ -4,10 +4,16 @@ footer {
 }
 
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     position: relative;
     display: flex;
     flex-direction: column;
     box-shadow: 0 4px 24px rgba(105, 105, 105, .1);
+    @media screen and (min-width:$tablet) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    }
     @media screen and (min-width:$desktop) {
     display: flex;
     justify-content: baseline;}
@@ -74,11 +80,6 @@ footer::after {
 .footer-inner {
     display: flex;
     flex-direction: column;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    @media screen and (min-width:$tablet) {
-    padding-top: 100px;
-    padding-bottom: 100px;}    
     @media screen and (min-width:$desktop) {
     display: flex;
     justify-content: baseline;}
@@ -120,17 +121,10 @@ footer::after {
 .nav-footer {
     display: flex;
     flex-direction: column;
-    margin-right: 81px;
-
+    margin-left: auto;
     @media screen and (min-width:$tablet) {
-        flex-direction: row;
-        margin-right: 250px;
-    }
-
-    @media screen and (min-width:$desktop) {
-        margin-right: 320px;
-    }
-}
+    flex-direction: row;
+}}
 
 .nav-footer__item {
     &:not(:first-child) {
@@ -247,3 +241,4 @@ footer::after {
      @media screen and (min-width:$desktop) {
     margin-right: 0;
 }}
+
