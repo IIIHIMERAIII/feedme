@@ -189,7 +189,6 @@ footer::after {
     line-height: 120%;
     color: $dark-green;
     text-decoration: underline;
-    cursor: pointer;
     transition: 250ms $cubic-bezier;
     @media screen and (min-width:$tablet) {
     font-size: 12px;
