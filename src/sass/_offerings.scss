@@ -193,7 +193,7 @@
 
 
     .offerings__background {
-        margin-top: -100;
+        margin-top: 0;
         position: relative;
         background-image: url('../images/tablet/offersbg_tablet.png');
         background-repeat: no-repeat;
@@ -353,6 +353,7 @@
         background-image: url('../images/desktop/offerbg_desktop.png');
         background-repeat: no-repeat;
         background-size: cover;
+        margin-top: -100px;
     }
 
 
