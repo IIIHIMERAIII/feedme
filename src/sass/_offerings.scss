@@ -7,13 +7,6 @@
 
 }
 
-
-.offerings__main-apple {
-    @media screen and (min-width:$tablet) {
-        
-    }
-}
-
 .offerings .offerings__image {
 
 
@@ -236,7 +229,7 @@
     }
 
     .offerings__main-apple {
-
+        margin-bottom: 60px;
         display: flex;
         justify-content: space-between;
     }
