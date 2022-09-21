@@ -2,6 +2,7 @@
     background-repeat: no-repeat;
     background-position: bottom;
     background-image:url(../images/mobile/customerbgmob320.png);
+    padding-top: 60px;
 
     @media screen and (max-width: $mobile) {
         background-image:url(../images/mobile/customerbgmob320.png);
@@ -13,6 +14,7 @@
 
     @media screen and (min-width: $tablet){
         background-image:url(../images/tablet/customersbgtab.png);
+        padding-top: 100px;
     }
 
     @media screen and (min-width: $desktop){
@@ -25,14 +27,9 @@
 .customers__container{
     display: flex;
     flex-direction: column;
-    padding-top: 60px;
 
     @media screen and (max-width: $tablet){
         align-items: center;
-    }
-
-    @media screen and (min-width: $tablet){
-        padding-top: 100px;
     }
 }
 
@@ -42,6 +39,11 @@
 
 .customers__paragraph{
     margin-bottom: 32px;
+    line-height: 1.14;
+
+    @media screen and (min-width: $tablet){
+        line-height: 1.19;
+    }
 }
 
 .customers__say{
@@ -88,10 +90,10 @@
 .review__paragraph{
     margin-top: 28px;
     margin-bottom: 40px;
-    @include fSize(700, 16px, 1.18);
+    @include fSize(700, 16px, 1.19);
 
     @media screen and (min-width: $tablet){
-        @include fSize(700, 18px, 1.16);
+        @include fSize(700, 18px, 1.17);
     }
 }
 
@@ -110,4 +112,8 @@
 .review__customer{
     border-right: 1px solid #7EB101;
     padding-right: 16px;
+}
+
+.review__name{
+    font-size: 14px;
 }
