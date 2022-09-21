@@ -15,11 +15,12 @@
 
     @media screen and (min-width: $tablet){
         background-image:url(../images/tablet/customersbgtab.png);
-        padding-top: 100px;
+       
     }
 
     @media screen and (min-width: $desktop){
         background-image:url(../images/desktop/customersbgdesk.png);
+        padding-top: 100px;
     }
    
 }
