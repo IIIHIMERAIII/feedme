@@ -1,4 +1,4 @@
-$primary-white-color:  #F5F5F5;
+$primary-white-color:  #FEFEFE;
 $primary-yellow-color: #FFE550;
 $button-green:#BBF330;
 $button-green-hover: #B5FF00;
@@ -17,3 +17,9 @@ $desktop: 1279.8px;
 // // img name rule
 // pizza_desktop@x1.img
 // pizza_desktop@x2.img
+
+// animation rules
+
+$cubic-bezier: cubic-bezier(0, .55, 1, .37);
+
+// transition: 200ms $cubic-bezier;

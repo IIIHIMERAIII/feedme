@@ -1,0 +1,74 @@
+<div id="modal" class="backdrop is-hidden">
+  <div class="modal">
+    <div class="modal__wrap">
+      <button class="modal__close" onclick="toggleModal()">
+        <svg class="modal__icon" width="23" height="24">
+          <use href="./images/icons.svg#close_btn"></use>
+        </svg>
+      </button>
+    </div>
+
+    <form class="form">
+      <h3 class="form__title">Order Form</h3>
+      <label for="NameUser" class="form__label">
+        <span class="form__info">Name</span>
+      </label>
+      <input
+        id="NameUser"
+        class="form__input"
+        type="text"
+        name="name"
+        placeholder="Your name"
+        required
+        minlength="3"
+        maxlength="25"
+      />
+      <span class="error">
+        <svg class="error__icon" width="12" height="12">
+          <use href="./images/icons.svg#icon_error"></use>
+        </svg>
+        The name must be between 3 and 25 characters
+      </span>
+
+      <label for="Phone" class="form__label">
+        <span class="form__info">Phone number</span>
+      </label>
+      <input
+        id="Phone"
+        class="form__input"
+        type="tel"
+        name="tel"
+        placeholder="+38(0__) ___ __ __"
+        required
+        pattern="[\+][0-9]{12}"
+      />
+      <span class="error">
+        <svg class="error__icon" width="12" height="12">
+          <use href="./images/icons.svg#icon_error"></use>
+        </svg>
+        This phone must be in the format +38 099 000 00 00
+      </span>
+
+      <label for="Email" class="form__label">
+        <span class="form__info">E-mail</span>
+      </label>
+      <input
+        id="EMail"
+        class="form__input"
+        type="email"
+        name="email"
+        placeholder="example@gmail.com"
+        required
+        minlength="8"
+      />
+      <span class="error">
+        <svg class="error__icon" width="12" height="12">
+          <use href="./images/icons.svg#icon_error"></use>
+        </svg>
+        Please enter a valid email address
+      </span>
+
+      <button class="form__send" type="submit">Send</button>
+    </form>
+  </div>
+</div>

@@ -1,4 +1,4 @@
-.customers{
+.customers {
     background-repeat: no-repeat;
     background-position: bottom;
     background-image:url(../images/mobile/customerbgmob320.png);
@@ -8,7 +8,6 @@
         background-image:url(../images/mobile/customerbgmob320.png);
         background-size: cover;
     }
-
     @media screen and (min-width: 480px) and (max-width: 767px) {
         background-image:url(../images/mobile/customerbgmob.png);
     }
