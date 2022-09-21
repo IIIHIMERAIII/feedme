@@ -111,10 +111,10 @@
 
 .subscribe-form__btn {
     display: flex;
-    padding: 11px 22px;
+    padding: 10.5px 22px;
     justify-content: center;
     border-radius: 30px;
-    border: none;
+    border: 1px solid $button-green;
     background-color: $button-green;
     cursor: pointer;
     @include fSize(500, 13px, 1.54);
