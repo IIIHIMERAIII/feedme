@@ -107,11 +107,9 @@ footer::after {
     height: 51px;
 
     @media screen and (min-width:$tablet) {
-        margin-left: 13px;
         flex-shrink: 0;
 
         @media screen and (min-width:$desktop) {
-            margin-left: 0;
             margin-right: 148px;
         }
     }
