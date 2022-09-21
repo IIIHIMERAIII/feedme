@@ -8,6 +8,12 @@
 }
 
 
+.offerings__main-apple {
+    @media screen and (min-width:$tablet) {
+        
+    }
+}
+
 .offerings .offerings__image {
 
 
@@ -373,3 +379,4 @@
         gap: 90px;
     }
 }
+
