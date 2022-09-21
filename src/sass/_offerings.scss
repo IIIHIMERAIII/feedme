@@ -36,7 +36,6 @@
     align-items: center;
     width: 280px;
     height: 280px;
-    margin-bottom: 60px;
     box-shadow: inset 0 0 0 12px $primary-yellow-color;
     background-color: $primary-white-color;
     border: 3px solid $primary-white-color;
@@ -58,7 +57,7 @@
 
         width: 357px;
         height: 357px;
-        margin-top: 100px;
+        margin-top: 200px;
 
 
     }
@@ -72,10 +71,6 @@
 
 .offerings__desc {
     width: 277px;
-    margin-bottom: 28px;
-}
-
-.offerings__item {
     margin-bottom: 28px;
 }
 
@@ -180,7 +175,6 @@
     .offerings {
         margin-top: -320px;
         padding-top: 150px;
-        padding-bottom: 100px;
     }
 
     .offerings .offerings__title {
@@ -199,10 +193,12 @@
 
 
     .offerings__background {
+        margin-top: -100;
         position: relative;
         background-image: url('../images/tablet/offersbg_tablet.png');
         background-repeat: no-repeat;
         background-size: cover;
+
     }
 
     .offerings__apple-box {
@@ -295,7 +291,6 @@
     .offerings {
         margin-top: -150px;
         padding-top: 150px;
-        padding-bottom: 100px;
     }
 
     .offerings__apple-box {
@@ -305,6 +300,7 @@
 
     .desctop-main {
         height: 100%;
+        padding-top: 200px;
     }
 
     .tablet-img {
