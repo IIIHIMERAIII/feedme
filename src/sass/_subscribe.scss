@@ -87,7 +87,7 @@
 
 }
 .subscribe-form__input {
-    padding: 12px 11px;
+    padding: 0 11px;
     width: 100%;
     background-color: white;
     border: 0.854167px solid $primary-yellow-color;
@@ -111,13 +111,15 @@
 .subscribe-form__btn {
     display: flex;
     padding: 11px 22px;
-    margin-left: auto;
+    // margin-left: auto;
     max-width: 103px;
     border-radius: 30px;
     border: none;
     background-color:$button-green;
     cursor: pointer;
     @include fSize(500, 13px, 1.54);
+    transition: background-color 250ms $cubic-bezier;
+
     &:hover,
     &:focus {
         background-color: $button-green-hover;
