@@ -98,7 +98,7 @@ footer::after {
     justify-content: space-between;
     margin-right: auto;
     @media screen and (min-width:$tablet) {
-        align-items: center;
+    align-items: center;
     }
 }
 
@@ -108,7 +108,6 @@ footer::after {
 
     @media screen and (min-width:$tablet) {
         margin-left: 13px;
-        margin-right: 114px;
         flex-shrink: 0;
 
         @media screen and (min-width:$desktop) {
@@ -121,25 +120,23 @@ footer::after {
 .nav-footer {
     display: flex;
     flex-direction: column;
-    margin-left: auto;
+    margin-right: 101px;
     @media screen and (min-width:$tablet) {
+    margin-right: 100px;
     flex-direction: row;
 }}
 
 .nav-footer__item {
     &:not(:first-child) {
-        margin-top: 20px;
-    }
-
+    margin-top: 20px;}
     @media screen and (min-width:$tablet) {
-        &:not(:first-child) {
-            margin-top: 0px;
-            margin-left: 28px;
-        }
-    }
+    &:not(:first-child){
+    margin-top: 0px;
+    margin-left: 28px;}}
 }
 
 .nav-footer__link {
+    line-height: 1.14;
     transition: 200ms $cubic-bezier;
     &:hover,
     &:focus {
@@ -182,7 +179,7 @@ footer::after {
     margin-top: 31px;
     text-align: start;
     font-size: 10px;
-    line-height: 120%;
+    line-height: 1.2;
     @media screen and (min-width:$tablet) {
     margin-top: 12px;}
 }
@@ -193,7 +190,7 @@ footer::after {
     color: $dark-green;
     text-decoration: underline;
     cursor: pointer;
-    transition: 200ms $cubic-bezier;
+    transition: 250ms $cubic-bezier;
 }
 
 .footer-info {
