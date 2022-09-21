@@ -152,7 +152,7 @@ footer::after {
 }
 
 .footer-input {
-    min-width: 279px;
+    width: 279px;
     margin-bottom: 20px;
     @media screen and (min-width:$tablet) {
     margin-bottom: 0;}
