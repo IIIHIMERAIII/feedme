@@ -79,6 +79,32 @@
     margin-bottom: 28px;
 }
 
+.offerings-delivery::before {
+    margin-bottom: 8px;
+    content: "";
+    display: flex;
+    background-image: url("../images/rocket.svg");
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+    background-position: center;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+}
+
+.offerings-order::before {
+    margin-bottom: 8px;
+    content: "";
+    display: flex;
+    background-image: url("../images/finger.svg");
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+    background-position: center;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+}
+
 .offerings__list {
     width: 252px;
 }
@@ -108,31 +134,30 @@
 }
 
 .offerings__btn {
-
     padding: 10px 22px;
     border: none;
     background: #FFFFFF;
-
     border: 2px solid $dark-green;
     border-radius: 30px;
     cursor: pointer;
-
     &:hover,
     &:focus {
-        border: 2px solid $button-border;
-    }
-}
+    border: 2px solid $button-border;}}
+
 
 .offerings__link {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.offerings__link--svg {
-    margin-left: 4px;
-}
-
+    &::after {
+    margin-right: 3.42px;
+    content: "";
+    background-image: url("../images/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 13.67px;
+    height: 13.67px;
+    }}
 @media screen and (max-width: $tablet) {
     .tablet-img {
         display: none;
