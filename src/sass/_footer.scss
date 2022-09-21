@@ -185,13 +185,15 @@ footer::after {
 }
 
 .footer-link {
-    font-size: 12px;
+    font-size: 10px;
     line-height: 120%;
     color: $dark-green;
     text-decoration: underline;
     cursor: pointer;
     transition: 250ms $cubic-bezier;
-}
+    @media screen and (min-width:$tablet) {
+    font-size: 12px;
+}}
 
 .footer-info {
     margin-top: 62px;
