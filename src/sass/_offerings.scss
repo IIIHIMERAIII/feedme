@@ -63,6 +63,15 @@
     }
 }
 
+
+.offerings__item {
+    &:not(:last-child){
+    margin-bottom: 28px;}
+    @media screen and (min-width:$tablet) {
+    &:not(:last-child) {
+    margin-bottom: 0;}
+}}
+
 .offerings__title {
     width: 280px;
     margin-bottom: 28px;
