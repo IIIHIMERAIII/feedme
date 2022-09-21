@@ -110,16 +110,13 @@
     @media screen and (min-width: $tablet) {
         display: flex;
     }
-}
+    @media screen and (min-width:$desktop) {
+    align-items: center;
+}}
 
 .hero__content-inner {
     @media screen and (min-width:$tablet) {
-        padding-right: 41px;
-    }
-
-    @media screen and (min-width:$desktop) {
-        padding-top: 159px;
-        padding-right: 152px;
+        padding-right: 137px;
     }
 }
 
