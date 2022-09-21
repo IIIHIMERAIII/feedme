@@ -116,7 +116,11 @@
 
 .hero__content-inner {
     @media screen and (min-width:$tablet) {
-        padding-right: 137px;
+        margin-right: 41px;
+    }
+
+    @media screen and (min-width:$desktop) {
+        margin-right: 152px;
     }
 }
 
