@@ -23,6 +23,7 @@
 }
 
 .offerings__main-apple {
+    margin-bottom: 60px;
     padding-top: 40px;
     display: flex;
     justify-content: center;
@@ -101,6 +102,7 @@
 
 .offerings__list {
     width: 252px;
+    margin-bottom: 28px;
 }
 
 
@@ -258,12 +260,12 @@
 
     .offerings .offerings__title {
         width: 526px;
-        @include fSize(700, 42px, 1.2);
+        @include fSize(700, 42px, 1.14);
         margin-bottom: 20px;
     }
 
     .offerings__desc {
-        @include fSize(400, 16px, 1.2);
+        @include fSize(400, 16px, 1.14);
         margin-bottom: 40px;
         width: 500px;
     }
