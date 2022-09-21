@@ -64,21 +64,24 @@ border-radius: 50%;
     }
 }
 
-
-
 .offerings__title {
-    
+    width: 280px;
     margin-bottom: 28px;
 }
 
 
 .offerings__desc {
+    width: 277px;
     margin-bottom: 28px;
 }
 
 .offerings__item {
     margin-bottom: 28px;
 }
+
+.offerings__list {
+    width: 252px;
+    }
 
 
 .offerings__icon {
@@ -95,6 +98,7 @@ border-radius: 50%;
 .offerings__benefits {
     @include fSize(700 , 18px, 1.2);
     margin-bottom: 16px;
+    
     }
 
 .offerings__wraper {
@@ -143,14 +147,21 @@ border-radius: 50%;
     }
 
     .offerings__main-apple {
-        display: block;
+        display: flex;
         }
     }
 
 @media screen and (min-width:$tablet) {
     .offerings {
+        margin-top: -320px;
         padding-top: 150px;
         padding-bottom: 100px;
+    }
+
+    .offerings .offerings__title {
+        width: 526px;
+        @include fSize(700 , 42px, 1.2);
+        margin-bottom: 20px;
     }
 
     .offerings-block {
@@ -161,12 +172,17 @@ border-radius: 50%;
         display: none;
         }
 
+
     .offerings__background {
         position: relative;
         background-image: url('../images/tablet/offersbg_tablet.png');  
         background-repeat: no-repeat; 
         background-size: cover;
     }
+
+    .offerings__apple-box {
+        margin-top: 150px;
+        }
 
     .offerings .offerings__apple-box2 {
         justify-content: center;    
@@ -196,6 +212,14 @@ border-radius: 50%;
             display: flex;
             justify-content: space-between;
         }
+
+        .offerings__image-2 {
+            margin-bottom: 50px;
+            }
+
+            .offerings__image-3 {
+                margin-bottom: 50px;
+                }
     
 
   
@@ -211,7 +235,8 @@ border-radius: 50%;
         margin-bottom: 60px;
         }
 
-    .offerings__title {
+    .offerings .offerings__title {
+        width: 526px;
         @include fSize(700 , 42px, 1.2);
         margin-bottom: 20px;
     }
@@ -219,13 +244,14 @@ border-radius: 50%;
     .offerings__desc {
         @include fSize(400 , 16px, 1.2);
         margin-bottom: 40px;
+        width: 500px;
     }
 
     .offerings__list {
         display: flex;
-        justify-content: center;
         align-items: center;
         gap: 116px;
+        width: auto;
         margin-bottom: 40px;
     }
 
@@ -240,6 +266,20 @@ border-radius: 50%;
     }
 
 @media screen and (min-width: $desktop) {
+    .offerings {
+        margin-top: -150px;
+        padding-top: 150px;
+        padding-bottom: 100px;
+    }
+
+    .offerings__apple-box {
+        width: 396px;
+        height: 502px;
+    }
+
+    .desctop-main {
+        height: 100%;
+        }
 
     .tablet-img {
         display: none;  
@@ -248,10 +288,31 @@ border-radius: 50%;
     .offerings__img {
         display: none;
         }
-    
-    .offerings__apple-box2 {
-        display: none; 
+
+        
+.offerings__picture-2 {
+    display: none;
     }
+
+    
+.offerings__picture-3 {
+    display: none;
+    }
+
+        .offerings__apple-box2 {
+            display: none; 
+        }
+
+
+        .offerings__img-2 {
+            display: none;
+            }
+
+            .offerings__img-3 {
+                display: none;
+                }
+    
+  
 
     .offerings__background {
         background-image: url('../images/desktop/offerbg_desktop.png');  
