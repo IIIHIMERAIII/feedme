@@ -1,8 +1,7 @@
-
 .offerings__background {
-    
-    background-image: url('../images/mobile/offersbg@mobile.png');  
-    background-repeat: no-repeat; 
+
+    background-image: url('../images/mobile/offersbg@mobile.png');
+    background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 60px;
 
@@ -10,18 +9,18 @@
 
 
 .offerings .offerings__image {
-    
+
 
     @media screen and (max-width: 767px) {
         position: relative;
-    z-index: 2;
-    
-    border-radius: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 41px;
-    margin-bottom:  117px;
-        }
+        z-index: 2;
+
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 41px;
+        margin-bottom: 117px;
+    }
 }
 
 .offerings__main-apple {
@@ -33,32 +32,33 @@
 .offerings__apple-box {
     position: relative;
     display: flex;
-justify-content: center;
-align-items: center;
-width: 280px;
-height: 280px;
-margin-bottom: 60px;
-box-shadow: inset 0 0 0 12px $primary-yellow-color;
-background-color: $primary-white-color;
-border: 3px solid $primary-white-color;
-border-radius: 50%;
-&::after {
-    content: "";
-    position: absolute;
-    bottom: 35px;
-    right: 55px;
-    width: 164px;
-    height: 56.47px;
-    background: radial-gradient(50% 50%,#32582f 0%,rgba(105,105,105,0) 100%);
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 280px;
+    margin-bottom: 60px;
+    box-shadow: inset 0 0 0 12px $primary-yellow-color;
+    background-color: $primary-white-color;
+    border: 3px solid $primary-white-color;
+    border-radius: 50%;
 
-}
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 35px;
+        right: 55px;
+        width: 164px;
+        height: 56.47px;
+        background: radial-gradient(50% 50%, #32582f 0%, rgba(105, 105, 105, 0) 100%);
+
+    }
 
 
     @media screen and (min-width:$tablet) {
-    
-    width: 357px;
-    height: 357px;
-    margin-top: 100px;
+
+        width: 357px;
+        height: 357px;
+        margin-top: 100px;
 
 
     }
@@ -81,11 +81,11 @@ border-radius: 50%;
 
 .offerings__list {
     width: 252px;
-    }
+}
 
 
 .offerings__icon {
-    
+
     justify-content: center;
     display: flex;
     align-items: center;
@@ -96,10 +96,10 @@ border-radius: 50%;
 }
 
 .offerings__benefits {
-    @include fSize(700 , 18px, 1.2);
+    @include fSize(700, 18px, 1.2);
     margin-bottom: 16px;
-    
-    }
+
+}
 
 .offerings__wraper {
     align-items: center;
@@ -108,15 +108,15 @@ border-radius: 50%;
 }
 
 .offerings__btn {
-    
+
     padding: 10px 22px;
     border: none;
     background: #FFFFFF;
 
     border: 2px solid $dark-green;
     border-radius: 30px;
-    cursor:pointer;
-    
+    cursor: pointer;
+
     &:hover,
     &:focus {
         border: 2px solid $button-border;
@@ -131,7 +131,7 @@ border-radius: 50%;
 
 .offerings__link--svg {
     margin-left: 4px;
-    }
+}
 
 @media screen and (max-width: $tablet) {
     .tablet-img {
@@ -139,17 +139,17 @@ border-radius: 50%;
     }
 
     .offerings__apple-box2 {
-        display: none; 
+        display: none;
     }
 
     .offerings__apple-box3 {
-        display: none; 
+        display: none;
     }
 
     .offerings__main-apple {
         display: flex;
-        }
     }
+}
 
 @media screen and (min-width:$tablet) {
     .offerings {
@@ -160,69 +160,70 @@ border-radius: 50%;
 
     .offerings .offerings__title {
         width: 526px;
-        @include fSize(700 , 42px, 1.2);
+        @include fSize(700, 42px, 1.2);
         margin-bottom: 20px;
     }
 
     .offerings-block {
         display: block;
-        }
+    }
 
     .offerings__img {
         display: none;
-        }
+    }
 
 
     .offerings__background {
         position: relative;
-        background-image: url('../images/tablet/offersbg_tablet.png');  
-        background-repeat: no-repeat; 
+        background-image: url('../images/tablet/offersbg_tablet.png');
+        background-repeat: no-repeat;
         background-size: cover;
     }
 
     .offerings__apple-box {
         margin-top: 150px;
-        }
+
+    }
 
     .offerings .offerings__apple-box2 {
-        justify-content: center;    
-        align-items: flex-end;    
-        column-gap: 44px;    
-        margin-bottom: 70px;    
-        margin-left: 29px;    
+        justify-content: center;
+        align-items: flex-end;
+        column-gap: 44px;
+        margin-bottom: 70px;
+        margin-left: 29px;
         display: flex;
-        
-        }
 
-        .offerings .offerings__apple-box::after {
-            content: "";
-            position: absolute;
-            bottom: 45px;
-            right: 87px;
-        }
+    }
 
-        .offerings__image {
-            position: relative;
-                z-index: 2;
-                margin-bottom: 100px;
-            }
-    
-        .offerings__main-apple {
-            
-            display: flex;
-            justify-content: space-between;
-        }
+    .offerings .offerings__apple-box::after {
+        content: "";
+        position: absolute;
+        bottom: 45px;
+        right: 87px;
+    }
 
-        .offerings__image-2 {
-            margin-bottom: 50px;
-            }
+    .offerings__image {
+        position: relative;
+        z-index: 2;
+        margin-bottom: 100px;
+    }
 
-            .offerings__image-3 {
-                margin-bottom: 50px;
-                }
-    
+    .offerings__main-apple {
 
-  
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .offerings__image-2 {
+        margin-bottom: 50px;
+    }
+
+    .offerings__image-3 {
+        margin-bottom: 50px;
+    }
+
+
+
     .images-wraper {
         display: flex;
         justify-content: space-between;
@@ -231,18 +232,18 @@ border-radius: 50%;
     }
 
     .tablet-img {
-        
+
         margin-bottom: 60px;
-        }
+    }
 
     .offerings .offerings__title {
         width: 526px;
-        @include fSize(700 , 42px, 1.2);
+        @include fSize(700, 42px, 1.2);
         margin-bottom: 20px;
     }
 
     .offerings__desc {
-        @include fSize(400 , 16px, 1.2);
+        @include fSize(400, 16px, 1.2);
         margin-bottom: 40px;
         width: 500px;
     }
@@ -259,11 +260,11 @@ border-radius: 50%;
 
 @media screen and (max-width: $desktop) {
     .desktop-img {
-    display: none;
+        display: none;
     }
 
-    
-    }
+
+}
 
 @media screen and (min-width: $desktop) {
     .offerings {
@@ -273,54 +274,67 @@ border-radius: 50%;
     }
 
     .offerings__apple-box {
-        width: 396px;
-        height: 502px;
+        width: 550px;
+        height: 550px;
     }
 
     .desctop-main {
         height: 100%;
-        }
+    }
 
     .tablet-img {
-        display: none;  
+        display: none;
     }
 
     .offerings__img {
         display: none;
-        }
-
-        
-.offerings__picture-2 {
-    display: none;
     }
 
-    
-.offerings__picture-3 {
-    display: none;
+    .offerings .offerings__apple-box::after {
+        content: "";
+        position: absolute;
+        bottom: 80px;
+        right: 150px;
+        width: 252px;
     }
 
-        .offerings__apple-box2 {
-            display: none; 
-        }
+    .offerings__picture {
+        width: 395px;
+        height: 502px;
+        margin-bottom: 150px;
+    }
+
+    .offerings__picture-2 {
+        display: none;
+    }
 
 
-        .offerings__img-2 {
-            display: none;
-            }
+    .offerings__picture-3 {
+        display: none;
+    }
 
-            .offerings__img-3 {
-                display: none;
-                }
-    
-  
+    .offerings__apple-box2 {
+        display: none;
+    }
+
+
+    .offerings__img-2 {
+        display: none;
+    }
+
+    .offerings__img-3 {
+        display: none;
+    }
+
+
 
     .offerings__background {
-        background-image: url('../images/desktop/offerbg_desktop.png');  
-        background-repeat: no-repeat; 
+        background-image: url('../images/desktop/offerbg_desktop.png');
+        background-repeat: no-repeat;
         background-size: cover;
     }
 
-    
+
 
     .images-wraper {
         display: none;
@@ -328,12 +342,12 @@ border-radius: 50%;
 
     .offerings__link {
         display: none;
-        }
+    }
 
-        .desktop-flex {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 90px;
-        }
+    .desktop-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 90px;
+    }
 }
